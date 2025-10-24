@@ -59,8 +59,10 @@ class _HomePageState extends State<HomePage> {
               ),
             const SizedBox(height: 20),
             ElevatedButton(
-              onPressed: getUsuarios,
-              child: const Text('GET a Usuarios'),
+              onPressed: () {
+                Navigator.pushNamed(context, '/usuarios');
+              },
+              child: const Text('Ver Usuarios'),
             ),
             const SizedBox(height: 10),
             ElevatedButton(

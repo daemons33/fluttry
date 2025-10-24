@@ -4,12 +4,14 @@ import 'package:hw/features/auth/pages/register_page.dart';
 import 'package:hw/features/home/pages/home_page.dart';
 import 'package:hw/core/storage/secure_storage.dart';
 import 'package:hw/core/widgets/base_scaffold.dart';
+import 'package:hw/features/usuario/pages/usuario_page.dart';
 
 class AppRouter {
   static const String login = '/login';
   static const String register = '/register';
   static const String home = '/home';
   static const String initial = '/';
+  static const String usuarios = '/usuarios';
 
   static Route<dynamic> generateRoute(RouteSettings settings) {
     switch (settings.name) {
@@ -18,6 +20,9 @@ class AppRouter {
 
       case login:
         return MaterialPageRoute(builder: (_) => const LoginPage());
+
+      case usuarios:
+        return MaterialPageRoute(builder: (_) => const UsuarioPage());
 
       // case register:
       //   return MaterialPageRoute(builder: (_) => const RegisterPage());

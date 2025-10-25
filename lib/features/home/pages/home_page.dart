@@ -64,6 +64,20 @@ class _HomePageState extends State<HomePage> {
               },
               child: const Text('Ver Usuarios'),
             ),
+            const SizedBox(height: 20),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.pushNamed(context, '/planes');
+              },
+              child: const Text('Adm. Planes'),
+            ),
+            const SizedBox(height: 20),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.pushNamed(context, '/planesshow');
+              },
+              child: const Text('Ver Planes'),
+            ),
             const SizedBox(height: 10),
             ElevatedButton(
               onPressed: signOut,
